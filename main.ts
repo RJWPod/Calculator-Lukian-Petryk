@@ -25,7 +25,7 @@ input.onGesture(Gesture.Shake, function () {
         Mode = 1
     } else {
         basic.showString("=")
-        basic.showString("" + (Number_2 + Number_1))
+        basic.showString("" + (Number_2 - Number_1))
     }
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
