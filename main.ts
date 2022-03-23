@@ -19,13 +19,13 @@ input.onButtonPressed(Button.B, function () {
 })
 input.onGesture(Gesture.Shake, function () {
     if (Mode == 0) {
-        basic.showString("+")
+        basic.showString("-")
         Number_2 = Number_1
         Number_1 = 0
         Mode = 1
     } else {
         basic.showString("=")
-        basic.showString("" + (Number_1 + Number_2))
+        basic.showString("" + (Number_2 + Number_1))
     }
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
