@@ -2,12 +2,6 @@ input.onButtonPressed(Button.A, function () {
     Number_1 += 1
     basic.showNumber(Number_1)
 })
-input.onGesture(Gesture.ScreenDown, function () {
-    basic.showString("CA")
-    Number_1 = 0
-    Number_2 = 0
-    Mode = 0
-})
 input.onButtonPressed(Button.AB, function () {
     if (Mode == 0) {
         basic.showString("+")
@@ -33,6 +27,12 @@ input.onGesture(Gesture.Shake, function () {
         basic.showString("=")
         basic.showString("" + (Number_1 + Number_2))
     }
+})
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    basic.showString("CA")
+    Number_1 = 0
+    Number_2 = 0
+    Mode = 0
 })
 let Mode = 0
 let Number_2 = 0
