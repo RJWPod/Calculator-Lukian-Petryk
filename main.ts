@@ -38,6 +38,7 @@ let Mode = 0
 let Number_2 = 0
 let Number_1 = 0
 basic.showIcon(IconNames.Yes)
+basic.showString("Press logo = CA")
 Number_1 = 0
 Number_2 = 0
 Mode = 0
